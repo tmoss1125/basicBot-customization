@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "tmoss1125";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -55,7 +55,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "SmirkBot",
         language: "english",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
@@ -63,8 +63,8 @@
         cmdDeletion: true,
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
-        afkRemoval: true,
-        maximumDc: 60,
+        afkRemoval: false,
+        maximumDc: 30,
         bouncerPlus: true,
         blacklistEnabled: true,
         lockdownEnabled: false,
@@ -76,25 +76,25 @@
         voteSkipLimit: 10,
         timeGuard: true,
         maximumSongLength: 10,
-        autodisable: true,
-        commandCooldown: 30,
+        autodisable: false,
+        commandCooldown: 60,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
+            ["op", "Ugh...This song again? Seriously? "],
+            ["history", "Why are you playing the songs from history? Place song thing new. "],
             ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["sound", "Ahem. The song is a bit..dead, please don't bring it back "],
+            ["nsfw", "WOAH. Can you not? I'd rather not have that image in my mind. "],
+            ["unavailable", "Hello? Hello? I thought so, this song has dissapeared. "]
         ],
-        afkpositionCheck: 15,
-        afkRankCheck: "ambassador",
+        afkpositionCheck: 275338426963457264582,
+        afkRankCheck: "user",
         motdEnabled: false,
-        motdInterval: 5,
+        motdInterval: 10,
         motd: "Temporary Message of the Day",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
@@ -105,7 +105,7 @@
         website: null,
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
